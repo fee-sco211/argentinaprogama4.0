@@ -1,0 +1,29 @@
+*{/** todos los elemntos*/
+    color: blue;
+}
+
+h1  {
+    color: red;
+    border: 1px solid black;
+}
+/** */
+p{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    color: green;
+}
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#mi_parrafo{
+    color: aquamarine;
+}
+
+.esta_es_mi_clase{
+    font-weight: bold;
+    color: blueviolet;
+}
