@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body{
+    margin-left: 200px;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 999;
+}
+
+#logo-cv{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header #nav-cv{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    line-height: 50px;
+}
+
+header #nav-cv a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 500ms ease ;
+    border-radius: 50px;
+}
+
+header #nav-cv a:hover{
+    background: rgb(157, 155, 155);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/** ----------------------------- cuerpo ---------------------------------*/
+
+main{
+    text-align: center;
+    padding-top: 10%;
+}
+
+/** ----------------------------- presentacion ---------------------------------*/
+
+#info-sobremi{
+    display: grid;
+    padding: 0% 25% ;
+}
+
+#img-cv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#datos-cv{
+    text-align: left;
+}
+
+#info-sobremi img{
+    height: 300px;
+    width: 235px;
+}
+
+#presentacion-cv{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10PX;
+}
+
+/** ----------------------------- experiencia ---------------------------------*/
+#expLaboral{
+    margin-bottom: 100px;
+}
+
+#trabajo{
+    padding-left: 50px;
+    text-align: left;
+}
+
+#posicion{
+    margin-top: 70px;
+}
+
+#localidad{
+    margin-bottom: 15px;
+}
+
+/** ----------------------------- formacion ---------------------------------*/
+
+#Formacion{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#Secundario{
+    margin-top: 100px;
+    text-align: left;
+}
+
+#terciario{
+    padding-top: 100px;
+    text-align: left;
+}
+
+
+/** ----------------------------------------------- aptitudes y habilidades --------------------------------------------------------- */
+
+#aptirudesyhabilidades-cv{
+    padding-top: 200px;
+}
+
+#listado-conocimientos{
+    display: block;
+    font-size: 2em;
+}
+
+#Titulo{
+    margin-bottom: 30px;
+}
+
+#intereses{
+    text-align: center;
+    display: none;
+}
+
+#pasatiempos-titulo{
+    background-color: rgba(199, 158, 88, 0.1);
+    padding-top: 10px;
+    text-align: center;
+}
+
+#logos-pasatiempos{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(199, 158, 88, 0.1);
+}
+
+#pasatiempo{
+    padding: 40px 20px 20px 20px;
+    font-size: 2em;
+    display: grid;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+#icono-pasatiempos{
+    color: blueviolet;
+}
+
+#conocimientosButton{
+    align-items: center;
+    display: none;
+}
+
+#centrado{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#botones{
+    display: grid;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/** ----------------------------- redes ---------------------------------*/
+
+#redes-titulo{
+    padding-bottom: 30px;
+}
+
+#redes-cv{
+    line-height: 200px;
+}
+
+#enlases{
+    background-color: rgba(81, 239, 239, 0.7);
+    border-radius: 40%;
+    height: 30px;
+    width: 130px;
+    padding: 60px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
+#butForm{
+    background-color: rgb(238, 195, 142);
+    border: none;
+    padding: 10px 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#formulario{
+    display: none;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    gap: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#texto-info{
+    margin-bottom: 5px;
+}
+
+form .campo, textarea{
+    padding: 15px 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    outline: 0px;
+}
+
+form textarea{
+    max-width: 500px;
+    min-height: 140px;
+    max-height: 150px;
+
+}
+/** ----------------------------- pie de pagina ---------------------------------*/
+
+footer{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    bottom:0px;
+    width: 100%;
+    margin-top: auto;
+    display: table;
+}
+
+/** ---------------------- adaptavilidad ------------------------------ */
+
+@media (max-width:1000px){
+    body{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    main{
+        margin-top: 100px;
+    }
+    /** ---------------------- header ------------------------------ */
+    .checkbtn{
+        display: block;
+    }
+    header{
+        background-color: rgb(156, 156, 156);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        gap: 100px;
+    }
+    #logo-cv{
+        text-align: left;
+        padding: 20px;
+        color: aliceblue;
+        line-height: 30px;
+        font-size: 30px;
+    }
+    #menu-cv{
+        text-align: right;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6a6f74;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        right:0;
+    }
+        /** ---------------------- PRESENTACION ------------------------------ */
+    #info-sobremi{
+        padding-left: 19%;
+    }
+    /** ----------------------------- redes ---------------------------------*/
+    #enlases{
+        font-size: 10px;
+        margin-left: 5px;
+        height: 10px;
+        width: 100px;
+    }
+    form{
+        max-width: 200px;
+    }
+    form textarea{
+        max-width: 200px;
+    }
+    /** ----------------------------- aptitudes y hablidades ---------------------------------*/
+    #aptirudesyhabilidades-cv{
+        padding-top: 50px;
+    }
+    #logos-pasatiempos{
+        display:grid;
+    }
+}
